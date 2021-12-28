@@ -38,3 +38,7 @@ volumes:
     sonarqube_db:
     sonarqube_postgresql_data:
 
+# Backup docker volumes from a container.
+# docker run --rm --volumes-from 1cda3ba1d82e -v $(pwd):/backup busybox tar czvf /backup/backup.tar.gz /opt/sonarqube/extensions/plugins
+
+
